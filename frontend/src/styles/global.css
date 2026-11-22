@@ -33,6 +33,21 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .link { border: none; background: none; color: var(--brand); cursor: pointer; padding: 0; }
 .page-foot { display: flex; justify-content: space-between; margin-top: 8px; font-size: 12px; color: var(--muted); }
 .error-text { color: #b42318; }
+.info-text { color: #1f6feb; }
+.warn-text { color: #b45309; }
+.ok-text { color: #15803d; }
+
+/* 延迟恢复编排工作台 */
+.tab-row { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+.panel { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-bottom: 14px; }
+.coverage-card { display: flex; gap: 18px; flex-wrap: wrap; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; font-size: 13px; }
+.recovery-card, .report-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 14px; margin-top: 12px; }
+.recovery-head p { margin: 6px 0 0; color: var(--muted); font-size: 13px; }
+.select-list { margin: 10px 0; }
+.select-item { display: flex; gap: 8px; align-items: flex-start; padding: 6px 0; font-size: 13px; border-bottom: 1px solid #eef2f6; }
+.report-card ul { margin: 8px 0 0; padding-left: 18px; font-size: 13px; }
+.create-field textarea { width: 100%; box-sizing: border-box; border: 1px solid var(--border); border-radius: 6px; padding: 8px; font-family: inherit; resize: vertical; }
+.link:disabled { color: #94a3b8; cursor: not-allowed; }
 .modal-backdrop { position: fixed; inset: 0; background: rgb(15 23 42 / 35%); display: grid; place-items: center; padding: 20px; z-index: 20; }
 .modal { width: min(560px, 100%); max-height: 90vh; overflow: auto; background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 20px 50px rgb(15 23 42 / 20%); }
 .create-field { display: block; margin-bottom: 10px; }

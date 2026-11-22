@@ -24,6 +24,10 @@ from app.services.data_diff import DataDiffService
 from app.services.task_schedule import TaskScheduleService
 from app.services.stream_audit import StreamAuditService
 from app.services.stream_health import StreamHealthService
+from app.services.lag_observation import LagObservationService
+from app.services.lag_segment import LagSegmentService
+from app.services.lag_recovery import LagRecoveryService
+from app.services.lag_replay import LagReplayService
 
 SERVICES: dict[str, BaseModuleService] = {
     "cdc_source": CdcSourceService(),
@@ -48,6 +52,8 @@ SERVICES: dict[str, BaseModuleService] = {
     "task_schedule": TaskScheduleService(),
     "stream_audit": StreamAuditService(),
     "stream_health": StreamHealthService(),
+    "lag_observation": LagObservationService(),
+    "lag_segment": LagSegmentService(),
 }
 
 

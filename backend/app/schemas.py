@@ -29,3 +29,17 @@ class EntryPayload(BaseModel):
 class ActionPayload(BaseModel):
     action: str
     remark: str | None = None
+
+
+class SegmentSelectPayload(BaseModel):
+    segment_ids: list[int] = Field(default_factory=list)
+
+
+class ReviewPayload(BaseModel):
+    conclusion: str = ""
+    reason: str = ""
+
+
+class WindowPayload(BaseModel):
+    new_lower: int
+    new_upper: int | None = None
